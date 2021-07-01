@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TUGAS 34</title>
+    <style media="screen">
+     .style {
+       color: yellow;
+     }
+    </style>
+  </head>
+  <body>
+    <h1>TUGAS 44</h1>
+    <p>Jangan Rubah Yang Ini</p>
+    <p>Ubah Warna Yang Ini</p>
+    <button onclick="cek()" type="button" name="button">Ubah Warna</button>
+    <script type="text/javascript">
+      function cek(){
+        var a = document.getElementsByTagName("p")[1];
+        var b = document.createAttribute ("class");
+        b.value = "style";
+        a.attributes.setNamedItem(b);
+      }
+    </script>
+  </body>
+</html>
